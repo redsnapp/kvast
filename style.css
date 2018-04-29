@@ -1,0 +1,359 @@
+body {
+    min-width: 1040px;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "Arial", sans-serif;
+    color: rgb(64, 64, 64);
+    background-color: rgb(255, 255, 255);
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.page-header {
+    min-height: 490px;
+    padding-top: 35px;
+    background-image: url("img/header-bg1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.page-header .container {
+    width: 1020px;
+}
+
+.page-header,
+.page-footer {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+
+.header-logo {
+    float: left;
+    padding-left: 100px;
+}
+
+.header-top {
+    margin-bottom: 110px;
+}
+
+.main-nav {
+    float: left;
+    width: 605px;
+    margin: 0;
+    margin-top: 15px;
+    margin-left: 80px;
+    padding: 20px 0;
+    list-style: none;
+    border-top: rgba(255, 255, 255, 0.2) 1px solid;
+    border-bottom: rgb(255, 255, 255, 0.2) 1px solid;
+}
+
+.main-nav li {
+    float: left;
+    margin-right: 55px;
+    text-transform: uppercase;
+}
+
+.main-nav li:last-child {
+    margin-right: 0;
+}
+
+.main-nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.main-nav a:hover {
+    text-decoration: underline;
+}
+
+.main-nav a:active {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.promo {
+    font-weight: bold;
+    font-size: 71px;
+    line-height: 75px;
+    text-align: center;
+}
+
+.promo a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    width: 144px;
+    padding: 11px 0;
+    font: inherit;
+    vertical-align: top;
+    text-align: center;
+    color: rgb(151, 85, 9);
+    text-transform: uppercase;
+    text-decoration: none;
+    word-wrap: break-word;
+    border: 2px solid rgb(151, 85, 9);
+    border-radius: 2px;
+}
+
+.section-title {
+    margin: 0;
+    margin-right: 180px;
+    margin-bottom: 100px;
+    font-weight: bold;
+    font-size: 43px;
+    line-height: 55px;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+}
+
+.news {
+    padding-top: 85px;
+    padding-bottom: 90px;
+}
+
+.news .container {
+    width: 810px;
+}
+
+.news-item {
+    float: left;
+    width: 402px;
+    border-left: 1px solid rgb(0, 0, 0, 0.1);
+    border-right: 1px solid rgb(0, 0, 0, 0.1);
+}
+
+.news-item:last-child {
+    border-left: none;
+}
+
+.rel {
+    position: relative;
+    width: 400px;
+    height: 459px;
+}
+
+.rel.rel1 {
+    background: url(img/bottle-left.jpg) no-repeat;
+    background-position: 50% 50%;
+}
+
+.rel.rel2 {
+    background: url(img/bottle-right.jpg) no-repeat;
+    background-position: 50% 50%;
+}
+
+.topright {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.alc {
+    font-weight: bold;
+    text-transform: uppercase;
+    word-spacing: 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-right: 60px;
+    padding-bottom: 15px;
+    line-height: 28px;
+}
+
+span {
+    word-spacing: normal;
+}
+
+.news-item .topright p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-left: 0;
+}
+
+.news-item p {
+    line-height: 29px;
+    margin-bottom: 60px;
+}
+
+.news-item h3 {
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.news-item p,
+.news-item h3,
+.btn.btn-detailed{
+    margin-left: 40px;
+}
+
+.btn.btn-detailed:hover {
+    border-color: rgb(114, 65, 8);
+    color: rgb(114, 65, 8);
+}
+
+.btn.btn-detailed:active {
+    color: rgba(114, 65, 8, 0.5)
+}
+
+.btn.btn-buy {
+    background-color: rgb(151, 85, 9);
+    color: rgb(255, 255, 255);
+    width: 100px;
+}
+
+.btn.btn-buy:hover {
+    background-color: rgb(114, 65, 8);
+}
+
+.btn.btn-buy:active {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.price {
+    font-weight: bold;
+    display: inline-block;
+    margin: 15px 0 0 20px;
+}
+
+.benefits {
+    background-color: rgb(243, 194, 102);
+    padding-bottom: 65px;
+    padding-top: 78px;
+    margin-top: 30px;
+}
+
+.benefits ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.benefits .container {
+    width: 1350px;
+    padding-left: 150px;
+}
+
+.benefits-item {
+    position: relative;
+    float: left;
+    width: 300px;
+    padding-top: 90px;
+    padding-left: 90px;
+    padding-right: 10px;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.benefits-item::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 85px;
+    width: 65px;
+    height: 65px;
+    background-image: url("img/sprite.png");
+    background-repeat: no-repeat;
+}
+
+.benefits-item.byitself::before {
+    background-position: -1px -5px;
+}
+
+.benefits-item.native::before {
+    background-position: -5px -76px;
+}
+
+.benefits-item.econom::before {
+    background-position: 1px -143px;
+}
+
+.benefits-item:first-child {
+    border-left: none;
+}
+
+h3.benefits-title {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.benefits p {
+    line-height: 29px;
+}
+
+.history {
+    padding-top: 80px;
+    padding-bottom: 10px;
+}
+
+.history .container {
+    width: 900px;
+}
+
+.history .section-title {
+    margin-bottom: 80px;
+}
+
+.history h3 {
+    display: inline;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-right: 330px;
+}
+
+.history-source {
+    margin-bottom: 25px;
+}
+
+.history-source a {
+    color: rgb(151, 85, 9);
+}
+
+.history dl {
+    width: 800px;
+    margin: 0;
+    padding: 0;
+}
+
+.history dt {
+    margin: 0;
+}
+
+.history dd {
+    position: relative;
+    min-height: 100px;
+    margin: 0;
+    padding-right: 100px;
+}
+
+.history dd img {
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+
+.history dd p {
+    line-height: 29px;
+    margin-top: 25px;
+    margin-bottom: 80px;
+}
+
+.order {
+    background-color: rgb(248, 211, 142);
+}
+
+.about-us {
+    background-color: rgb(248, 236, 214);
+}
