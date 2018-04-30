@@ -349,11 +349,59 @@ h3.benefits-title {
     margin-top: 25px;
     margin-bottom: 80px;
 }
+.about-us {
+    background-color: rgb(248, 236, 214);
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+
+.about-us .container {
+    width: 900px;
+}
+
+.about-us .section-title {
+    margin-bottom: 80px;
+}
+
+blockquote {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+svg {
+    position: absolute;
+    top: 5px;
+    left: -77px;
+    width: 25px;
+    height: 40px;
+}
+
+svg.left {
+    left: -100px;
+}
+
+.about-us p {
+    line-height: 29px;
+    margin-bottom: 40px;
+}
+
+cite {
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 20px;
+    margin-left: 310px;
+    padding-top: 15px;
+}
+
+.btn-read {
+    color: rgb(165, 162, 162);
+    border-color: rgb(165, 162, 162);
+    width: 150px;
+}
 
 .order {
     background-color: rgb(248, 211, 142);
-}
-
-.about-us {
-    background-color: rgb(248, 236, 214);
 }
