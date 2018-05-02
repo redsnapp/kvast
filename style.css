@@ -491,5 +491,189 @@ td.spec {
 }
 
 .order {
-    background-color: rgb(248, 211, 142);
+    background-color: rgb(255, 203, 120);
+    padding-bottom: 100px;
+    padding-top: 85px;
+}
+
+.order .container {
+    width: 801px;
+}
+
+.order .section-title {
+    margin-bottom: 60px;
+}
+
+.order-tip {
+    display: inline-block;
+    line-height: 29px;
+    margin-bottom: 70px;
+}
+
+.order-form-group {
+    margin-bottom: 13px;
+}
+
+.order-form-group-email {
+    margin-bottom: 58px;
+}
+
+.order-form label {
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.order-form-group-left {
+    float: left;
+}
+
+.order-form-group-right {
+    float: right;
+}
+
+.order-form input[type="text"],
+.order-form select,
+.order-form textarea {
+    box-sizing: border-box;
+    height: 50px;
+    padding: 9px 20px;
+    border: none;
+    background-color: rgb(230, 182, 108);
+}
+
+::-webkit-input-placeholder{
+    color: rgb(160, 127, 73);
+    font-weight: bold;
+}
+
+label[for="fullname"] {
+    padding-right: 50px;
+}
+
+input[id="fullname"],
+select[id="order-volume"],
+input[id="email"] {
+    width: 600px;
+}
+
+label[for="phone"] {
+    padding-right: 36px;
+}
+
+input[id="phone-odd"],
+input[id="phone"] {
+    width: 200px;
+}
+
+label[for="phone-odd"] {
+    padding-right: 30px;
+}
+
+label[for="email"] {
+    padding-right: 141px;
+}
+
+label[for="order-volume"] {
+    padding-right: 61px;
+}
+
+/* custom select */
+.order-form select {
+    display: none;
+}
+
+.select-custom {
+    position: relative;
+	width: 580px;            
+    height: 27px; 
+    background-color: rgb(230, 182, 108);
+    color: rgb(160, 127, 73);
+    padding: 16px 0 9px 20px;
+}
+
+.select-label {
+    padding-right: 60px;
+}
+
+.select-custom,
+.select-label {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.select-custom::after {
+    content: "";
+    position: absolute;
+    top: 23px;
+    right: 20px;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top: 10px solid rgb(180, 143, 88);
+}
+/* custom select */
+
+.order-form textarea {
+    box-sizing: border-box;
+    height: 150px;
+    width: 600px;
+    padding: 20px;
+    border: none;
+    background-color: rgb(230, 182, 108);
+}
+
+label[for="message"] {
+    padding-right: 25px;
+    float: left;
+    margin-top: 15px;
+}
+
+.order-form-group-message {
+    margin-bottom: 35px;
+}
+
+/* customize .checkbox */
+.checkbox {
+	display: none;
+}
+
+.checkbox-custom {
+	position: relative;      
+	width: 35px;            
+	height: 35px;            
+    background-color: rgb(230, 182, 108);
+    margin-right: 25px;
+    margin-left: 200px;
+}
+
+.checkbox-custom,
+.checkbox-label {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.checkbox:checked + .checkbox-custom::before {
+	content: "";             
+	display: block;			 
+	position: absolute;      
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: url("img/bird.png");
+}
+/* customize .checkbox */
+
+.checkbox-area {
+    margin-bottom: 45px;
+}
+
+input[type="submit"] {
+    border: none;
+    color: rgb(255, 255, 255);
+    background: rgb(131, 71, 0);
+    width: 200px;
+    padding: 14px 20px;
+    margin-left: 200px;
 }

@@ -197,56 +197,73 @@
 
 	<div class="order">
 		<div class="container">
-      		<h2 class="section-title">Заказать</h2>
+			<h2 class="section-title">Заказать</h2>
 
-	      	<p class="order-tip">Не ждите пока нас отрекламируют, как Вятский квас, и мы поднимем цены! Закажите 			настоящий крафтовый квас сейчас. При заказе от 10<br> баррелей — скидка 10%.</p>
+			<p class="order-tip">Не ждите пока нас отрекламируют, как Вятский квас, и мы поднимем цены! Закажите<br>
+				настоящий крафтовый квас сейчас. При заказе от 10 баррелей — скидка 10%.</p>
 
-	      	<form class="order-form" action="/keksby-mail" method="post">
+			<form class="order-form" action="/keksby-mail" method="post">
 
 				<div class="order-form-group">
 					<label for="fullname">Представьтесь:</label>
-					<input type="text" name="fullname" id="fullname">
+					<input type="text" name="fullname" id="fullname" placeholder="КАК МЫ МОЖЕМ К ВАМ ОБРАЩАТЬСЯ?">
 				</div>
-		
-				<div class="order-form-group">
-					<label for="phone">Номер телефона:</label>
-					<input type="text" name="phone" id="phone">
+				
+				<div class="clearfix">
+					<div class="order-form-group order-form-group-left">
+						<label for="phone">Номер телефона:</label>
+						<input type="text" name="phone" id="phone" placeholder="+7 (XXX) XXX XX XX">
+					</div>
+
+					<div class="order-form-group order-form-group-right">
+						<label for="phone-odd">Доп. номер:</label>
+						<input type="text" name="phone-odd" id="phone-odd" placeholder="+7 (XXX) XXX XX XX">
+					</div>
 				</div>
 
-				<div class="order-form-group">
-					<label for="phone-odd">Доп. номер:</label>
-					<input type="text" name="phone-odd" id="phone-odd">
-				</div>
-
-				<div class="order-form-group">
+				<div class="order-form-group order-form-group-email">
 					<label for="email">Email:</label>
-					<input type="text" name="email" id="email">
-				</div>
-			
-				<div class="order-form-group">
-					<label for="volume">Объем заказа:</label>
-					<select name="topic" id="volume">
-						<option value="1">От 5 до 10 баррелей в неделю</option>
-					</select>
+					<input type="text" name="email" id="email" placeholder="ВАША ЭЛЕКТРОННАЯ ПОЧТА">
 				</div>
 
+				<!-- true select
+
+				<div class="order-form-group custom-select">
+					<label for="order-volume">Объем заказа:</label>
+					<select name="topic" id="order-volume">
+						<option value="1">ОТ 5 ДО 10 БАРРЕЛЕЙ В НЕДЕЛЮ</option>
+					</select>
+				</div> -->
+				
+				<!-- custom select -->
 				<div class="order-form-group">
+					<label>
+						<span class="select-label">Объем заказа:</span>
+						<span class="select-custom">ОТ 5 ДО 10 БАРРЕЛЕЙ В НЕДЕЛЮ</span>
+						<select name="topic" id="order-volume">
+							<option value="1">ОТ 5 ДО 10 БАРРЕЛЕЙ В НЕДЕЛЮ</option>
+						</select>
+					</label>
+				</div>
+
+				<div class="order-form-group order-form-group-message">
 					<label for="message">Доп. комментарий:</label>
-					<textarea name="message" id="message" rows="10" cols="75"></textarea>
+					<textarea name="message" id="message" rows="10" cols="75" placeholder="СООБЩИТЕ НАМ ВСЕ, ЧТО СЧИТАЕТЕ НУЖНЫМ"></textarea>
 				</div>
 
 				<div class="checkbox-area">
 					<label>
-						<input type="checkbox" name="subscription">
-						Я согласен получать квасную рассылку
+						<input class="checkbox" type="checkbox" name="subscription">
+						<span class="checkbox-custom"></span>
+						<span class="checkbox-label">Я СОГЛАСЕН ПОЛУЧАТЬ КВАСНУЮ РАССЫЛКУ</span>
 					</label>
 				</div>
-
+				
 				<input class="btn" type="submit" class="btn" value="Отправить заказ">
 
-			  </form>
-			</div>
-    	</div>
+			</form>
+		</div>
+	</div>
 
 	<div class="page-footer">
 		<div class="container">
