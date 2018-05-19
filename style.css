@@ -95,6 +95,27 @@ body {
     text-decoration: none;
 }
 
+.nav {
+    list-style: none;
+    margin-left: 450px;
+    margin-top: 60px;
+    padding: 0;
+}
+
+.nav li {
+    display: inline-block;
+    text-indent: -9999px;
+    margin-left: 23px;
+    width: 7px;
+    height: 7px;
+    background: #937c53;
+    cursor: pointer;
+}
+
+.nav li:first-child {
+    background: #fefefc;
+}
+
 .btn {
     display: inline-block;
     width: 144px;
@@ -677,6 +698,7 @@ input[type="submit"] {
     width: 200px;
     padding: 14px 20px;
     margin-left: 200px;
+    cursor: pointer;
 }
 
 /* .page-footer */
