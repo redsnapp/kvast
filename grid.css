@@ -1,0 +1,80 @@
+body {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Arial", sans-serif;
+  color: rgb(64, 64, 64);
+  background-color: rgb(255, 255, 255);
+}
+
+h3 {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 25px;
+}
+
+p {
+  margin: 0;
+  line-height: 29px;
+}
+
+/* .benefits */
+.benefits {
+  background-color: #ffcb78;
+  padding-bottom: 65px;
+  padding-top: 78px;
+  /* margin-top: 30px; */
+}
+
+.benefits ul {
+  display: grid;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.benefits-item {
+  position: relative;
+  padding-top: 90px;
+  padding-left: 90px;
+  padding-right: 20px;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.benefits-item.byitself {
+  grid-column: 2;
+  border-left: none;
+}
+
+.benefits-item.native {
+  grid-column: 3;
+}
+
+.benefits-item.econom {
+  grid-column: 4;
+}
+
+.benefits-item::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 85px;
+  width: 65px;
+  height: 65px;
+  background-image: url("img/sprite.png");
+  background-repeat: no-repeat;
+}
+
+.benefits-item.byitself::before {
+  background-position: -1px -5px;
+}
+
+.benefits-item.native::before {
+  background-position: -5px -76px;
+}
+
+.benefits-item.econom::before {
+  background-position: 1px -143px;
+}
