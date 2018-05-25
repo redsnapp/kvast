@@ -2,8 +2,8 @@ body {
   margin: 0;
   font-size: 16px;
   font-family: "Arial", sans-serif;
-  color: rgb(64, 64, 64);
-  background-color: rgb(255, 255, 255);
+  color: #404040;
+  background-color: #ffffff;
 }
 
 h2.section-title {
@@ -11,7 +11,7 @@ h2.section-title {
   font-weight: bold;
   font-size: 43px;
   text-transform: uppercase;
-  color: rgb(0, 0, 0);
+  color: #000000;
 }
 
 h3 {
@@ -26,7 +26,6 @@ p {
 }
 
 a.btn {
-  margin: 0;
   padding: 14px 20px;
   font-weight: bold;
   vertical-align: middle;
@@ -74,7 +73,7 @@ a.btn {
 .news .alc .percent {
   font-weight: bold;
   text-transform: uppercase;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #0000001a;
   padding-right: 65px;
   padding-bottom: 15px;
   line-height: 28px;
@@ -116,7 +115,7 @@ a.btn {
   font-weight: bold;
   font-size: 43px;
   text-transform: uppercase;
-  color: rgb(0, 0, 0);
+  color: #000000;
 }
 
 .news p.left {
@@ -167,12 +166,12 @@ a.btn {
 }
 
 .news .border-left {
-  border-left: 1px solid rgb(0, 0, 0, 0.1);
+  border-left: 1px solid #0000001a;
 }
 
 .news .border-left-right {
-  border-left: 1px solid rgb(0, 0, 0, 0.1);
-  border-right: 1px solid rgb(0, 0, 0, 0.1);
+  border-left: 1px solid #0000001a;
+  border-right: 1px solid #0000001a;
 }
 
 /* .benefits */
@@ -198,7 +197,7 @@ a.btn {
   padding-top: 90px;
   padding-left: 90px;
   padding-right: 20px;
-  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  border-left: 1px solid #0000001a;
 }
 
 .benefits-item.byitself {
@@ -262,7 +261,7 @@ a.btn {
 
 .history a {
   margin: 0;
-  color: rgb(151, 85, 9);
+  color: #975509;
 }
 
 .history span {
@@ -316,7 +315,7 @@ a.btn {
   margin: 0;
   padding-top: 80px;
   padding-bottom: 100px;
-  background-color: rgb(237, 229, 216);
+  background-color: #ede5d8;
 }
 
 .about-us h2 {
@@ -368,7 +367,6 @@ a.btn {
   display: grid;
   grid-template-columns: 1fr 800px 1fr;
   grid-template-rows: 130px 1fr;
-  margin: 0;
   padding-top: 90px;
   padding-bottom: 90px;
 }
@@ -431,4 +429,183 @@ a.btn {
 
 .choice .price-list .center {
   align-items: center;
+}
+
+/* order */
+.order {
+  display: grid;
+  grid-template-columns: 1fr 800px 1fr;
+  grid-template-rows: 125px 129px 1fr;
+  padding-bottom: 100px;
+  padding-top: 85px;
+  background-color: #ffcb78;
+}
+
+.order h2 {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.order p {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.order-form {
+  grid-area: 3 / 2 / 4 / 3;
+  display: grid;
+  grid-template-columns: 800px;
+  grid-template-rows: repeat(3, 63px) 45px 63px 192px 81px 50px;
+}
+
+.order-form-group {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.order-form label {
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-top: 18px;
+}
+
+label[for="phone"] {
+  padding-right: 36px;
+}
+
+label[for="phone-odd"] {
+  padding-right: 30px;
+  padding-left: 54px;
+}  
+
+.order-form input[type="text"] {
+  box-sizing: border-box;
+  padding: 16px 0 16px 20px;
+  border: none;
+  background-color: #e6b66c;
+}    
+
+.order-form textarea {
+  align-self: flex-start;
+  box-sizing: border-box;
+  padding: 16px 0 0 20px;
+  border: none;
+  background-color: #e6b66c;
+}    
+
+input[id="fullname"],
+input[id="email"],
+select[id="order-volume"],
+textarea {
+  width: 600px;
+}    
+
+input[id="phone-odd"],
+input[id="phone"] {
+  width: 200px;
+}  
+
+input[type="submit"] {
+  padding: 14px 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  vertical-align: middle;
+  text-align: center;
+  color: #ffffff;
+  background: #834700;
+  border: 2px solid #834700;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+::-webkit-input-placeholder{
+  color: #a07f49;
+  font-weight: bold;
+  text-transform: uppercase;
+}    
+
+/* custom select */
+.order-form select {
+  display: none;
+}
+
+.select-custom {
+  position: relative;
+  width: 580px;            
+  padding: 16px 0 16px 20px;
+  background-color: #e6b66c;
+  color: #a07f49;
+}
+
+.select-label {
+  padding-top: 18px;
+}
+
+.select-custom,
+.select-label {
+display: inline-block;
+vertical-align: middle;
+text-transform: uppercase;
+font-weight: bold;
+}
+
+.select-custom::after {
+  content: "";
+  position: absolute;
+  top: 23px;
+  right: 20px;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-top: 10px solid rgb(180, 143, 88);
+}
+/* custom select */
+
+/* custom checkbox */
+.checkbox {
+	display: none;
+}
+
+label.for-checkbox-custom {
+  padding: 0;
+}
+
+.checkbox-custom {
+	position: relative;      
+	width: 35px;            
+	height: 35px;            
+  background-color: rgb(230, 182, 108);
+}
+
+.checkbox-label {
+  padding-left: 25px;
+}
+
+.checkbox-custom,
+.checkbox-label {
+	display: inline-block;
+  vertical-align: middle;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.checkbox:checked + .checkbox-custom::before {
+	content: "";             
+	display: block;			 
+	position: absolute;      
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: url("img/bird.png");
+}
+/* custom checkbox */
+
+.order-form-checkbox {
+  padding-left: 200px;
+}
+
+.order-form-submit {
+  padding-left: 200px;
 }
