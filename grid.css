@@ -28,8 +28,6 @@ p {
 a.btn {
   padding: 14px 20px;
   font-weight: bold;
-  vertical-align: middle;
-  text-align: center;
   text-transform: uppercase;
   text-decoration: none;
   border: 2px solid;
@@ -695,3 +693,104 @@ label.for-checkbox-custom {
 .order-form-submit {
   padding-left: 200px;
 }
+
+/* page-footer */
+.page-footer {
+  display: grid;
+  grid-template-rows: 76px 114px;
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+
+.footer-top {
+  grid-row: 1;
+  display: grid;
+  grid-template-columns: 1fr 267px 603px 1.16fr;
+  align-items: center;
+}
+
+.footer-logo {
+  grid-column: 2;
+  display: flex;
+}
+
+.page-footer ul.main-nav {
+  grid-column: 3;
+  border-top: none;
+  border-bottom: none;
+}
+
+.footer-bottom {
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: 404px 308px 492px 208px 426px;
+}
+
+.footer-social {
+  grid-column: 2;
+  display: flex;
+  align-items: flex-end;
+}
+
+.social-btn {
+  width: 73px;
+  padding: 24px 0;
+  vertical-align: middle;
+  text-indent: -9999px;
+  background-image: url("img/sprite.png");
+  background-repeat: no-repeat;
+}
+
+.social-btn-in {
+  background-position: 20px -355px;
+  background-color: #1b1b1b;
+}
+
+.social-btn-fb {
+  background-position: 24px -294px;
+  background-color: #222222;
+}
+
+.social-btn-vk {
+  background-position: 22px -234px;
+  background-color: #1b1b1b;
+}
+
+.footer-bottom p.reference-needed {
+  grid-column: 3;
+  display: flex;
+  align-items: flex-end;
+  line-height: 21px;
+  padding-bottom: 14px;
+  font-size: 14px;
+  color: #999999;
+}
+
+.page-footer .footer-bottom .footer-copyright {
+  grid-column: 4;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+}
+
+.footer-copyright::before {
+  content: "";
+  position: absolute;
+  width: 67px;
+  height: 67px;
+  left: -90px;
+  background: url(img/htmlacademy.png) no-repeat;
+  background-position: 20px 18px;
+  background-color: #1b1b1b;
+}
+
+.footer-copyright a,
+.footer-copyright b {
+  font-weight: bold;
+  color: #999999;
+  font-size: 14px;
+  text-decoration: none;
+  padding-bottom: 40px;
+  padding-right: 5px;
+}
+
