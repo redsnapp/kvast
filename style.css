@@ -768,6 +768,7 @@ input[type="submit"] {
     float: left;
     font-size: 14px;
     color: #999999;
+    line-height: 21px;
 }
 
 .footer-copyright {
@@ -790,10 +791,8 @@ input[type="submit"] {
 
 .footer-copyright a,
 .footer-copyright b {
+    font-weight: bold;
     color: #999999;
     font-size: 14px;
-}
-
-/* .footer-copyright b {
-    padding-left: 60px;
-} */
+    text-decoration: none;
+  }
